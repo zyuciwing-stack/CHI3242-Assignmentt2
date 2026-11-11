@@ -4,7 +4,7 @@
 
 ## 閱讀入口
 
-- [報告 Markdown](report.md)、[Word](report.docx)、[報告網頁](report.html)。正文已修訂至2,318字元；PDF待作者審閱後補交，本次尚未上傳。
+- [報告 PDF](report.pdf)、[報告 Markdown](report.md)、[Word](report.docx)、[報告網頁](report.html)。正文 2,318 字元，含 5 則腳註；PDF 共 4 頁，附錄另見配套材料。
 - [配套材料索引](materials.html)：完整篇目、底本、分類結果及工程文件。
 - [完整語料附錄](output/report_support/corpus_appendix.html)：70 筆來源記錄，各筆列作者、篇名、選段、維基文庫底本與修訂號、句數及用途。實際可建模52篇，另有超奇與3筆疑難材料；70筆不等於70篇作品。
 - [互動探索](output/exploration/index.html)：離線 PCA 二維／三維圖、篇章近鄰與重引候選。該部分沿用 Jieba。

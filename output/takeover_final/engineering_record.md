@@ -15,3 +15,7 @@
 ## 狀態界限
 
 舊 output/report_sync/verification.json 不作本輪通過依據。本輪核驗另存 verification.json。公開GitHub尚未核實或上傳；不宣稱完成Moodle提交。原始PDF保留，作者審閱後須以本輪PDF同步再提交。
+
+
+## 腳註及提交同步
+已恢復五則原生 Word 腳註與文末附錄說明。正文 2318 字元；PDF 4 頁。使用者已確認 PDF 一併上傳。根目錄 Word 因使用者開啟而鎖定，最新 Word 另存 output/takeover_final/report_with_notes.docx，倉庫 report.docx 使用此新版。

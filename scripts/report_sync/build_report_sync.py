@@ -269,7 +269,7 @@ def build_docx(blocks):
                     in_refs = True
                 elif text.startswith("AI使用") or text in ("研究流程與AI使用說明", "配套材料"):
                     in_refs = False
-                p = add_paragraph(text, "head", keep_next=True, break_before=text.startswith("參考書目"))
+                p = add_paragraph(text, "head", keep_next=True, break_before=False)
             pending_caption = False
         elif block["kind"] == "caption":
             add_paragraph(block["text"], "caption", keep_next=True)

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "five_word_footnotes": true,
+    "five_markdown_notes": true,
+    "appendix_explanation": true,
+    "body_2000_2500": true,
+    "pdf_main_accuracy": true,
+    "pdf_has_references": true,
+    "pdf_has_ai_disclosure": true
+  },
+  "body_characters": 2318,
+  "pdf_pages": 4,
+  "footnotes": 5,
+  "pdf_sha256": "dab98f8926ebe3d9b5f2d0ed896201079bba5539adc1739585f5d53d75c5ff3f",
+  "word_latest": "output/takeover_final/report_with_notes.docx",
+  "root_word_locked": true
+}
