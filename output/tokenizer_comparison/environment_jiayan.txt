@@ -1,0 +1,14 @@
+cloudpickle==3.1.2
+jiayan==0.0.21
+jieba==0.42.1
+joblib==1.6.0
+narwhals==2.28.0
+numpy==2.5.3
+opencc-python-reimplemented==0.1.7
+pandas==3.0.6
+python-crfsuite==0.9.12
+python-dateutil==4.0.0
+scikit-learn==1.9.1
+scipy==1.18.1
+threadpoolctl==3.8.0
+tzdata==2026.6

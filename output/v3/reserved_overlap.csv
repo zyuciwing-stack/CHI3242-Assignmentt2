@@ -1,0 +1,2 @@
+﻿sent_id,work_id,work_title,author,period,genre,genre_group,carrier,cao_section,cao_pages,cao_status,quanwen_check,base_id,base_page,base_revision,base_url,dating_basis,status,version_added,sent_order,text_original,text_normalized,char_len,include_full,exclusion_reason,duplicate_of,duplicate_similarity,trainable
+E02-063,E02,論衡·佚文,王充,東漢,子書·文獻論,子書,論衡,Ⅴ 王充,159–285,主幹篇目（待核原書）,《全後漢文》不收《論衡》成篇；以《論衡》卷二十為底本,lunheng_061,論衡/61,2325845,https://zh.wikisource.org/wiki/論衡/61,王充撰；東漢前期。,included,1,63,孔子曰：「文王既歿，文不在茲乎！」,孔子曰：文王既歿，文不在茲乎！,12,False,duplicate_reserved,E01-092,0.9167,False

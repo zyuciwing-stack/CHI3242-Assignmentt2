@@ -1,0 +1,10 @@
+{
+  "tokenizer": "jieba",
+  "version": "0.42.1",
+  "opencc": "opencc.OpenCC('t2s')",
+  "note": "exploratory control: Jieba on the same simplified text used by Jiayan",
+  "n_main": 1163,
+  "n_chaoyi": 129,
+  "tokens_main_sha256": "c52c5c8b31c928fa54d7d4e8538cb7b41f63c4f66c80100fa362311481f829c8",
+  "tokens_chaoyi_sha256": "5791d1d6585743668bb8fc2bd633522574d58bc1a1110777642b3e3889168b7b"
+}

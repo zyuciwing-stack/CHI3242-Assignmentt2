@@ -1,0 +1,520 @@
+{
+  "checks": [
+    {
+      "check": "52 reference works",
+      "ok": true,
+      "detail": "catalogue=52, works.csv=52",
+      "category": "program"
+    },
+    {
+      "check": "1654 sentences",
+      "ok": true,
+      "detail": "rows=1654",
+      "category": "program"
+    },
+    {
+      "check": "period sentence counts 702/952",
+      "ok": true,
+      "detail": "{'東漢': 952, '西漢': 702}",
+      "category": "program"
+    },
+    {
+      "check": "per-work sentence counts match catalogue",
+      "ok": true,
+      "detail": "[]",
+      "category": "program"
+    },
+    {
+      "check": "100 features available",
+      "ok": true,
+      "detail": "features=100",
+      "category": "program"
+    },
+    {
+      "check": "100 feature matrix shape",
+      "ok": true,
+      "detail": "(52, 100)",
+      "category": "program"
+    },
+    {
+      "check": "100 feature matrix has no label columns",
+      "ok": true,
+      "detail": "no period/author/genre columns",
+      "category": "program"
+    },
+    {
+      "check": "100 z-score matrix has no NaN",
+      "ok": true,
+      "detail": "NaN=0",
+      "category": "program"
+    },
+    {
+      "check": "100 PCA coordinates shape",
+      "ok": true,
+      "detail": "(52, 4), columns=['work_id', 'PC1', 'PC2', 'PC3']",
+      "category": "program"
+    },
+    {
+      "check": "100 PCA has three components",
+      "ok": true,
+      "detail": "n_components=3",
+      "category": "program"
+    },
+    {
+      "check": "100 explained variance finite",
+      "ok": true,
+      "detail": "[0.08419915546477165, 0.06410291350308325, 0.05238621513483109]",
+      "category": "program"
+    },
+    {
+      "check": "100 similarity shape",
+      "ok": true,
+      "detail": "(52, 52)",
+      "category": "program"
+    },
+    {
+      "check": "100 similarity symmetric",
+      "ok": true,
+      "detail": "max asym=0.00e+00",
+      "category": "program"
+    },
+    {
+      "check": "100 similarity diagonal 1",
+      "ok": true,
+      "detail": "diag range=1.000000-1.000000",
+      "category": "program"
+    },
+    {
+      "check": "100 similarity no missing",
+      "ok": true,
+      "detail": "NaN=0",
+      "category": "program"
+    },
+    {
+      "check": "100 fit has 52 documents",
+      "ok": true,
+      "detail": "n_fit=52",
+      "category": "program"
+    },
+    {
+      "check": "100 超奇 excluded from fit",
+      "ok": true,
+      "detail": "E01 not in document_ids",
+      "category": "program"
+    },
+    {
+      "check": "100 超奇 projection-only",
+      "ok": true,
+      "detail": "fit_work_count=52, overlap=0.257",
+      "category": "program"
+    },
+    {
+      "check": "100 超奇 not in works.csv",
+      "ok": true,
+      "detail": "E01 absent from 52-work table",
+      "category": "program"
+    },
+    {
+      "check": "50 features available",
+      "ok": true,
+      "detail": "features=50",
+      "category": "program"
+    },
+    {
+      "check": "50 feature matrix shape",
+      "ok": true,
+      "detail": "(52, 50)",
+      "category": "program"
+    },
+    {
+      "check": "50 feature matrix has no label columns",
+      "ok": true,
+      "detail": "no period/author/genre columns",
+      "category": "program"
+    },
+    {
+      "check": "50 z-score matrix has no NaN",
+      "ok": true,
+      "detail": "NaN=0",
+      "category": "program"
+    },
+    {
+      "check": "50 PCA coordinates shape",
+      "ok": true,
+      "detail": "(52, 4), columns=['work_id', 'PC1', 'PC2', 'PC3']",
+      "category": "program"
+    },
+    {
+      "check": "50 PCA has three components",
+      "ok": true,
+      "detail": "n_components=3",
+      "category": "program"
+    },
+    {
+      "check": "50 explained variance finite",
+      "ok": true,
+      "detail": "[0.11533775652380444, 0.07806203483220789, 0.07007254286978701]",
+      "category": "program"
+    },
+    {
+      "check": "50 similarity shape",
+      "ok": true,
+      "detail": "(52, 52)",
+      "category": "program"
+    },
+    {
+      "check": "50 similarity symmetric",
+      "ok": true,
+      "detail": "max asym=0.00e+00",
+      "category": "program"
+    },
+    {
+      "check": "50 similarity diagonal 1",
+      "ok": true,
+      "detail": "diag range=1.000000-1.000000",
+      "category": "program"
+    },
+    {
+      "check": "50 similarity no missing",
+      "ok": true,
+      "detail": "NaN=0",
+      "category": "program"
+    },
+    {
+      "check": "50 fit has 52 documents",
+      "ok": true,
+      "detail": "n_fit=52",
+      "category": "program"
+    },
+    {
+      "check": "50 超奇 excluded from fit",
+      "ok": true,
+      "detail": "E01 not in document_ids",
+      "category": "program"
+    },
+    {
+      "check": "50 超奇 projection-only",
+      "ok": true,
+      "detail": "fit_work_count=52, overlap=0.226",
+      "category": "program"
+    },
+    {
+      "check": "50 超奇 not in works.csv",
+      "ok": true,
+      "detail": "E01 absent from 52-work table",
+      "category": "program"
+    },
+    {
+      "check": "exact cross-work matches",
+      "ok": true,
+      "detail": "rows=0 (deduped corpus; duplicates logged in data/v3/excluded.csv)",
+      "category": "program"
+    },
+    {
+      "check": "approximate candidates present",
+      "ok": true,
+      "detail": "rows=30",
+      "category": "program"
+    },
+    {
+      "check": "W06/E11 special check detected",
+      "ok": true,
+      "detail": "containment=1.000, shared=10, LCS=15",
+      "category": "program"
+    },
+    {
+      "check": "special check exact equality is false",
+      "ok": true,
+      "detail": "exact_normalized_equal=false; approximate method is the one that catches it",
+      "category": "program"
+    },
+    {
+      "check": "HTML exists",
+      "ok": true,
+      "detail": "C:\\CHI3242文本發掘\\第二次作業\\output\\exploration\\index.html",
+      "category": "browser"
+    },
+    {
+      "check": "HTML has no external script src",
+      "ok": true,
+      "detail": "no <script src=...>",
+      "category": "browser"
+    },
+    {
+      "check": "HTML has no external script/link resources",
+      "ok": true,
+      "detail": "[]",
+      "category": "browser"
+    },
+    {
+      "check": "2D/3D share the same coordinate source",
+      "ok": true,
+      "detail": "both views read DATA.pca[String(n)].coords; no second fit",
+      "category": "browser"
+    },
+    {
+      "check": "HTML placeholders replaced",
+      "ok": true,
+      "detail": "placeholders absent",
+      "category": "browser"
+    },
+    {
+      "check": "HTML contains Plotly and data",
+      "ok": true,
+      "detail": "size=6,726,531 chars",
+      "category": "browser"
+    },
+    {
+      "check": "HTML contains 超奇 projection",
+      "ok": true,
+      "detail": "E01/超奇 present",
+      "category": "browser"
+    },
+    {
+      "check": "100 complete signed contribution sums",
+      "ok": true,
+      "detail": "each top-10 neighbor has all N features; sum equals cosine",
+      "category": "program"
+    },
+    {
+      "check": "100 contributions independently recomputed",
+      "ok": true,
+      "detail": "saved z vectors and scalar cosine formula",
+      "category": "program"
+    },
+    {
+      "check": "100 z_product independently recomputed",
+      "ok": true,
+      "detail": "z_product = z_chaoyi * z_neighbor",
+      "category": "program"
+    },
+    {
+      "check": "100 neighbor raw counts",
+      "ok": true,
+      "detail": "compared with raw count matrix",
+      "category": "program"
+    },
+    {
+      "check": "100 both-present filter",
+      "ok": true,
+      "detail": "zero-count words never labelled both-present",
+      "category": "program"
+    },
+    {
+      "check": "100 contribution categories",
+      "ok": true,
+      "detail": "both above, both below, or opposite/zero",
+      "category": "program"
+    },
+    {
+      "check": "100 saved contribution-check JSON",
+      "ok": true,
+      "detail": "10 neighbors; all-feature sum equals cosine",
+      "category": "program"
+    },
+    {
+      "check": "E02 contribution-check counts",
+      "ok": true,
+      "detail": "55 both-present; 23 both-high; 52 both-low; 25 other",
+      "category": "program"
+    },
+    {
+      "check": "50 complete signed contribution sums",
+      "ok": true,
+      "detail": "each top-10 neighbor has all N features; sum equals cosine",
+      "category": "program"
+    },
+    {
+      "check": "50 contributions independently recomputed",
+      "ok": true,
+      "detail": "saved z vectors and scalar cosine formula",
+      "category": "program"
+    },
+    {
+      "check": "50 z_product independently recomputed",
+      "ok": true,
+      "detail": "z_product = z_chaoyi * z_neighbor",
+      "category": "program"
+    },
+    {
+      "check": "50 neighbor raw counts",
+      "ok": true,
+      "detail": "compared with raw count matrix",
+      "category": "program"
+    },
+    {
+      "check": "50 both-present filter",
+      "ok": true,
+      "detail": "zero-count words never labelled both-present",
+      "category": "program"
+    },
+    {
+      "check": "50 contribution categories",
+      "ok": true,
+      "detail": "both above, both below, or opposite/zero",
+      "category": "program"
+    },
+    {
+      "check": "50 saved contribution-check JSON",
+      "ok": true,
+      "detail": "10 neighbors; all-feature sum equals cosine",
+      "category": "program"
+    },
+    {
+      "check": "超奇 top-5 overlap",
+      "ok": true,
+      "detail": "3/5",
+      "category": "program"
+    },
+    {
+      "check": "超奇 top-10 overlap",
+      "ok": true,
+      "detail": "8/10",
+      "category": "program"
+    },
+    {
+      "check": "超奇 nearest E02 in both settings",
+      "ok": true,
+      "detail": "論衡·佚文",
+      "category": "program"
+    },
+    {
+      "check": "超奇 E05 and E03 in both top-10",
+      "ok": true,
+      "detail": "E05/E03 present in both top-10 lists",
+      "category": "program"
+    },
+    {
+      "check": "超奇 overlap JSON computed from neighbours",
+      "ok": true,
+      "detail": "{\"top5_100\": [\"E02\", \"E04\", \"E34\", \"W02\", \"W14\"], \"top5_50\": [\"E02\", \"E04\", \"E05\", \"E34\", \"W11\"], \"top5_overlap\": [\"E02\", \"E04\", \"E34\"], \"top5_overlap_count\": 3, \"top5_only_100\": [\"W02\", \"W14\"], \"top5_only_50\": [\"E05\", \"W11\"], \"top10_100\": [\"E02\", \"E03\", \"E04\", \"E05\", \"E33\", \"E34\", \"W02\", \"W03\", \"W14\", \"W25\"], \"top10_50\": [\"E02\", \"E03\", \"E04\", \"E05\", \"E11\", \"E34\", \"W02\", \"W11\", \"W14\", \"W25\"], \"top10_overlap\": [\"E02\", \"E03\", \"E04\", \"E05\", \"E34\", \"W02\", \"W14\", \"W25\"], \"top10_overlap_count\": 8, \"top10_only_100\": [\"E33\", \"W03\"], \"top10_only_50\": [\"E11\", \"W11\"], \"e02_rank_100\": 1, \"e02_rank_50\": 1, \"e05_top10_100\": true, \"e05_top10_50\": true, \"e03_top10_100\": true, \"e03_top10_50\": true}",
+      "category": "program"
+    },
+    {
+      "check": "31/52 works have >=3/5 stable neighbours",
+      "ok": true,
+      "detail": "31/52",
+      "category": "program"
+    },
+    {
+      "check": "reuse author and period composition",
+      "ok": true,
+      "detail": "30 pairs: 29 same-author, 29 same-period, one cross-period",
+      "category": "program"
+    },
+    {
+      "check": "protected data/models and authorized catalogue citation revision",
+      "ok": true,
+      "detail": "[]",
+      "category": "program"
+    },
+    {
+      "check": "HTML contribution controls and all-feature table",
+      "ok": true,
+      "detail": "neighbor selector, category/sort filters, z_product and contribution",
+      "category": "browser"
+    },
+    {
+      "check": "HTML all-feature summary not top-8 only",
+      "ok": true,
+      "detail": "summary uses all features; filtered rows are not the sum",
+      "category": "browser"
+    },
+    {
+      "check": "HTML corrected sign-flip caveat",
+      "ok": true,
+      "detail": "no co_loading; no claim that sign flip proves instability",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings avoids '壓過' causal claim",
+      "ok": true,
+      "detail": "author/genre labels describe visible structure; no causal 'override' claim",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings avoids '前30名' wording",
+      "ok": true,
+      "detail": "reuse described as all 30 qualifying pairs, not a top-30 ranking",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings avoids stale top-8/1,000-column wording",
+      "ok": true,
+      "detail": "table/findings describe all features, not a top-8 list",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings W09 retained-material caveat",
+      "ok": true,
+      "detail": "14 words are this excerpt, not the full original",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings 200-word threshold caveat",
+      "ok": true,
+      "detail": "200 words is a reminder threshold, not a validated boundary",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings exact-match caveat",
+      "ok": true,
+      "detail": "0 exact pairs under dedupe + minimum 8 CJK characters",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings W06/E11 only cross-period pair",
+      "ok": true,
+      "detail": "all 30 approximate candidates; one cross-period",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings E05/E03 in both top-10",
+      "ok": true,
+      "detail": "E05/E03 in both 100- and 50-feature top-10",
+      "category": "interpretation"
+    },
+    {
+      "check": "findings E02 contribution check",
+      "ok": true,
+      "detail": "all-feature sum and both-present count reported",
+      "category": "interpretation"
+    }
+  ],
+  "passed": 80,
+  "failed": 0,
+  "by_category": {
+    "program": {
+      "passed": 61,
+      "failed": 0,
+      "total": 61
+    },
+    "browser": {
+      "passed": 9,
+      "failed": 0,
+      "total": 9
+    },
+    "interpretation": {
+      "passed": 10,
+      "failed": 0,
+      "total": 10
+    }
+  },
+  "protected_hashes": {
+    "corpus_catalogue.csv": "f5a4ed83915a3963c8c9e6e5bc648df1d2dcb5164fe4d86ca468d513d51d24cd",
+    "data\\v3\\dataset_v3.csv": "87335fee6d029cb8401b4e0e5a5e722915608369ee6901d41a8a10e5df21d261",
+    "data\\v3\\sentences_all.csv": "12cc4419982f6fd03113cfbbd58a1dc6c06e9d05c4a8983ab1fe39be3be3560c",
+    "data\\v3\\sources.csv": "a6ddf426dfd4262e14dd8e64e9d6c3237adf5946032c8e4b30a543014bcf6981",
+    "output\\v3\\metrics.json": "bdba45aa0f2fbcba99c657ca018797cbfdd82c3be08c73cb760792ad0813cabc",
+    "output\\v3\\test_predictions.csv": "4e5fb89550a640d60210a738ee369b457dd000eb847473c18ed461e6101cb615",
+    "output\\v3\\independent_predictions.csv": "8997a66cd2aa2028d3c326143b774444a76367095c7e2c5261e32591471fd532"
+  },
+  "notes": [
+    "Only one 3-component PCA was fitted per feature setting; the 2D view is the PC1/PC2 subset of the same coordinates.",
+    "The HTML uses the same DATA.pca coordinates for the 2D and 3D plots; toggling visibility does not refit.",
+    "Exact cross-work duplicates are 0 because the build_corpus_v3 dedupe kept only the first occurrence; duplicates are logged in data/v3/excluded.csv.",
+    "相似度矩陣在原始 z-score 特徵上計算，不是 PCA 二維距離。",
+    "Browser checks here are static/offline HTML checks; mouse rotation/zoom was not simulated. See browser_check.md.",
+    "Research interpretation checks verify wording against computed data; they do not establish causal claims."
+  ]
+}

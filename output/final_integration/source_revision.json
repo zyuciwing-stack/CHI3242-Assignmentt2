@@ -1,0 +1,27 @@
+{
+  "backup": "C:\\CHI3242文本發掘\\第二次作業\\output\\final_integration\\before_wikisource_20261111_045321",
+  "previous_catalogue_sha256": "88c296c85778b806a4f5a6eeb9bec50527190a8a8f840d05d60ea58e02993098",
+  "instruction": "古籍語料全部以維基文庫固定修訂本定位，不要求紙本頁碼；原選篇歷程保留在歷史工程資料。",
+  "new_catalogue_sha256": "f5a4ed83915a3963c8c9e6e5bc648df1d2dcb5164fe4d86ca468d513d51d24cd",
+  "unchanged_data_model_files": 83,
+  "unchanged_catalogue_fields": [
+    "編號",
+    "分期",
+    "作者",
+    "篇名",
+    "收錄範圍",
+    "底本",
+    "修訂號",
+    "底本網址",
+    "固定修訂網址",
+    "候選句",
+    "可建模全庫句",
+    "主樣本句",
+    "訓練句",
+    "測試句",
+    "用途"
+  ],
+  "all_56_used_sources_have_wikisource_revision": true,
+  "pdf_pages": 11,
+  "pdf_all_pages_visually_inspected": true
+}

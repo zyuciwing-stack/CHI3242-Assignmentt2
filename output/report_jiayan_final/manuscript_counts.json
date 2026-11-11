@@ -1,0 +1,8 @@
+{
+  "body_visible_characters_including_headings_tables_punctuation_excluding_title": 2051,
+  "including_title": 2075,
+  "entire_report_visible_characters": 2494,
+  "body_han_characters": 1520,
+  "count_note": "字數按可見字元計，含標點、數字、表格與標題；Markdown語法、連結目標及空白不計。正文與含參考書目、AI說明的全篇均在2000至2500字元內。",
+  "experiments_run": false
+}

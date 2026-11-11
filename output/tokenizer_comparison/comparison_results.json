@@ -1,0 +1,220 @@
+{
+  "fixed_split": {
+    "n": 1163,
+    "train": 930,
+    "test": 233,
+    "train_period": {
+      "西漢": 505,
+      "東漢": 425
+    },
+    "test_period": {
+      "西漢": 127,
+      "東漢": 106
+    },
+    "ids_train_first": [
+      "E03-110",
+      "W06-009",
+      "W02-045"
+    ],
+    "ids_test_first": [
+      "W11-027",
+      "E13-015",
+      "W07-043"
+    ]
+  },
+  "baseline_reproduction": {
+    "label_mismatch": 0,
+    "prob_max_abs_diff": 8.326672684688674e-17,
+    "n": 233,
+    "saved_correct": 148,
+    "rerun_correct": 148
+  },
+  "independent_reproduction": {
+    "label_mismatch": 0,
+    "prob_max_abs_diff": 0.0,
+    "saved_east": 56,
+    "rerun_east": 56,
+    "n": 129
+  },
+  "metrics": {
+    "jieba": {
+      "accuracy": 0.6351931330472103,
+      "balanced_accuracy": 0.6201158817411975,
+      "macro_f1": 0.616070563148202,
+      "weighted_f1": 0.6237931394535706,
+      "majority_class": "西漢",
+      "majority_baseline": 0.5450643776824035,
+      "confusion_matrix": [
+        [
+          100,
+          27
+        ],
+        [
+          58,
+          48
+        ]
+      ],
+      "precision": {
+        "西漢": 0.6329113924050633,
+        "東漢": 0.64
+      },
+      "recall": {
+        "西漢": 0.7874015748031497,
+        "東漢": 0.4528301886792453
+      },
+      "f1": {
+        "西漢": 0.7017543859649122,
+        "東漢": 0.5303867403314917
+      },
+      "support": {
+        "西漢": 127,
+        "東漢": 106
+      },
+      "vocabulary_size": 1125,
+      "test_zero_features": 7,
+      "test_one_feature": 20,
+      "prob_max": 0.8176456912517631,
+      "train_size": 930,
+      "test_size": 233,
+      "train_period": {
+        "西漢": 505,
+        "東漢": 425
+      },
+      "test_period": {
+        "西漢": 127,
+        "東漢": 106
+      },
+      "tfidf_params": {
+        "token_pattern": "(?u)\\b\\w+\\b",
+        "min_df": 2,
+        "max_df": 0.9,
+        "sublinear_tf": true,
+        "ngram_range": [
+          1,
+          1
+        ]
+      },
+      "logistic_params": {
+        "max_iter": 2000,
+        "random_state": 42,
+        "class_weight": null,
+        "C": 1.0,
+        "solver": "lbfgs"
+      },
+      "tokenizer": "jieba"
+    },
+    "jiayan": {
+      "accuracy": 0.7167381974248928,
+      "balanced_accuracy": 0.7097385232506315,
+      "macro_f1": 0.7109398496240602,
+      "weighted_f1": 0.714629707315499,
+      "majority_class": "西漢",
+      "majority_baseline": 0.5450643776824035,
+      "confusion_matrix": [
+        [
+          100,
+          27
+        ],
+        [
+          39,
+          67
+        ]
+      ],
+      "precision": {
+        "西漢": 0.7194244604316546,
+        "東漢": 0.7127659574468085
+      },
+      "recall": {
+        "西漢": 0.7874015748031497,
+        "東漢": 0.6320754716981132
+      },
+      "f1": {
+        "西漢": 0.7518796992481203,
+        "東漢": 0.67
+      },
+      "support": {
+        "西漢": 127,
+        "東漢": 106
+      },
+      "vocabulary_size": 1294,
+      "test_zero_features": 1,
+      "test_one_feature": 0,
+      "prob_max": 0.861491006316267,
+      "train_size": 930,
+      "test_size": 233,
+      "train_period": {
+        "西漢": 505,
+        "東漢": 425
+      },
+      "test_period": {
+        "西漢": 127,
+        "東漢": 106
+      },
+      "tfidf_params": {
+        "token_pattern": "(?u)\\b\\w+\\b",
+        "min_df": 2,
+        "max_df": 0.9,
+        "sublinear_tf": true,
+        "ngram_range": [
+          1,
+          1
+        ]
+      },
+      "logistic_params": {
+        "max_iter": 2000,
+        "random_state": 42,
+        "class_weight": null,
+        "C": 1.0,
+        "solver": "lbfgs"
+      },
+      "tokenizer": "jiayan"
+    }
+  },
+  "paired": {
+    "n": 233,
+    "both_right": 122,
+    "both_wrong": 40,
+    "jieba_wrong_jiayan_right": 45,
+    "jieba_right_jiayan_wrong": 26,
+    "accuracy_delta": 0.0815450643776825,
+    "macro_f1_delta": 0.09486928647585824,
+    "east_recall_delta": 0.17924528301886788,
+    "net_correct": 19,
+    "mcnemar_binomial_p_exploratory": 0.03192716208321237,
+    "mcnemar_note": "paired exact binomial on discordant pairs; sentences within works are not independent; exploratory only"
+  },
+  "chaoyi": {
+    "jieba": {
+      "n": 129,
+      "east": 56,
+      "west": 73,
+      "zero_features": 7,
+      "one_feature": 8,
+      "prob_east_mean": 0.48895412696696217
+    },
+    "jiayan": {
+      "n": 129,
+      "east": 90,
+      "west": 39,
+      "zero_features": 0,
+      "one_feature": 1,
+      "prob_east_mean": 0.5495647051273871
+    }
+  },
+  "token_counts": {
+    "jieba": {
+      "main_total": 19531,
+      "main_mean": 16.793637145313845
+    },
+    "jiayan": {
+      "main_total": 27313,
+      "main_mean": 23.484952708512466
+    }
+  },
+  "hashes": {
+    "tokens_jieba_main": "6b860999bd37c306023bdaf2dc665a6adfd9b3746af8261c0188e32a2355723a",
+    "tokens_jiayan_main": "2cc5a1d64048064f92538157276d238e01235a7333db735db638d922bcbf39a2",
+    "test_predictions_saved": "4e5fb89550a640d60210a738ee369b457dd000eb847473c18ed461e6101cb615",
+    "dataset_v3": "87335fee6d029cb8401b4e0e5a5e722915608369ee6901d41a8a10e5df21d261"
+  }
+}

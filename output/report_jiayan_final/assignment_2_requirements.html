@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHI3242 Assignment 2 · Teaching</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            font-size: 16px;
+        }
+        .wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1rem 4rem;
+        }
+        main h1 { font-size: 1.8rem; font-weight: 400; margin: 0 0 0.75rem; }
+        .updated {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #888;
+            text-align: right;
+            margin: 0 0 0.35rem;
+        }
+        .course-header {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+        .course-header-info { flex: 1; min-width: 0; }
+        .course-header-info p { margin-bottom: 0.85rem; }
+        .course-header-info p:last-child { margin-bottom: 0; }
+        .course-header-image {
+            flex: 0 0 42%;
+            max-width: 380px;
+        }
+        .course-header-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 2px;
+        }
+        main h2 {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            font-size: 1.55rem;
+            font-weight: 600;
+            margin: 2.75rem 0 0.9rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e6e6e6;
+        }
+        main h3 { font-size: 1.1rem; font-weight: 500; margin: 1.5rem 0 0.5rem; }
+        main p { margin-bottom: 1rem; }
+        main ul, main ol { margin: 0 0 1rem 1.4rem; }
+        main li { margin-bottom: 0.35rem; }
+        main a { color: #0066cc; }
+        main code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: 0.9em;
+            background: #f4f4f4;
+            padding: 0.1em 0.35em;
+            border-radius: 3px;
+        }
+        main .bit-prefix { font-weight: 700; color: #222; }
+        main .bit-payload { color: #c45c16; font-weight: 500; }
+        main pre {
+            background: #f4f4f4;
+            border: 1px solid #e0e0e0;
+            padding: 1rem 1.1rem;
+            overflow-x: auto;
+            margin: 0 0 1rem;
+            border-radius: 4px;
+            white-space: pre-wrap;
+        }
+        main pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.85rem;
+        }
+        main .prompt {
+            margin: 0 0 1.25rem;
+            border: 1px solid #c5d4e4;
+            border-left: 4px solid #0066cc;
+            border-radius: 6px;
+            background: #f7f9fc;
+            overflow: hidden;
+        }
+        main .prompt .prompt-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0;
+            padding: 0.45rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: #0066cc;
+            background: #eef3f8;
+            border-bottom: 1px solid #d5deea;
+        }
+        main .prompt .copy-btn {
+            background: #fff;
+            border: 1px solid #c5d4e4;
+            color: #0066cc;
+            padding: 0.15rem 0.6rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: inherit;
+            line-height: 1;
+            transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+        }
+        main .prompt .copy-btn:hover { background: #e3ecf5; }
+        main .prompt .copy-btn:focus-visible {
+            outline: 2px solid #0066cc;
+            outline-offset: 1px;
+        }
+        main .prompt .copy-btn.copied {
+            color: #2a8a2a;
+            border-color: #2a8a2a;
+            background: #f0f8ef;
+        }
+        main .prompt pre {
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+        }
+        main figure.example {
+            margin: 1.5rem 0 0;
+        }
+        main figure.example img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #d5deea;
+            border-radius: 6px;
+        }
+        main figure.example figcaption {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        main strong { font-weight: 600; }
+        main em { font-style: italic; }
+        main hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+        main table { width: 100%; border-collapse: collapse; margin: 0 0 1.5rem; font-size: 0.88rem; }
+        main th, main td { text-align: left; padding: 0.5rem 0.65rem; border-bottom: 1px solid #e6e6e6; vertical-align: middle; }
+        main th { font-weight: 600; background: #f5f5f5; border-bottom: 2px solid #ddd; }
+        main table.assessment { table-layout: fixed; }
+        main table.assessment th:last-child,
+        main table.assessment td:last-child {
+            width: 7rem;
+            text-align: center;
+            white-space: nowrap;
+        }
+        /* Wide tables: cells wrap like normal text, and the wrapper scrolls sideways
+           only when the columns cannot fit (typically on a phone). */
+        .table-scroll {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            -webkit-overflow-scrolling: touch;
+            /* soft edge shadows appear only while there is more to scroll */
+            background:
+                linear-gradient(to right, #fff 30%, rgba(255,255,255,0)) left center,
+                linear-gradient(to left, #fff 30%, rgba(255,255,255,0)) right center,
+                radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.18), rgba(0,0,0,0)) left center,
+                radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.18), rgba(0,0,0,0)) right center;
+            background-repeat: no-repeat;
+            background-size: 2rem 100%, 2rem 100%, 0.7rem 100%, 0.7rem 100%;
+            background-attachment: local, local, scroll, scroll;
+        }
+        .table-scroll table { margin-bottom: 0; }
+        .table-scroll table:not(.schedule):not(.assessment) { width: 100%; }
+        .table-scroll table:not(.schedule):not(.assessment) th,
+        .table-scroll table:not(.schedule):not(.assessment) td {
+            min-width: 4.5em;
+            overflow-wrap: break-word;
+        }
+        .table-scroll table:not(.schedule):not(.assessment) code { white-space: nowrap; }
+        main table.schedule {
+            min-width: 760px;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        main table.schedule th:nth-child(1) { width: 7%; }
+        main table.schedule th:nth-child(2) { width: 11%; }
+        main table.schedule th:nth-child(3) { width: 12%; }
+        main table.schedule th:nth-child(4) { width: 22%; }
+        main table.schedule th:nth-child(5) { width: 48%; }
+        main table.schedule.no-event th:nth-child(1) { width: 8%; }
+        main table.schedule.no-event th:nth-child(2) { width: 14%; }
+        main table.schedule.no-event th:nth-child(3) { width: 28%; }
+        main table.schedule.no-event th:nth-child(4) { width: 50%; }
+        main table.schedule.no-event.with-notes th:nth-child(1) { width: 7%; }
+        main table.schedule.no-event.with-notes th:nth-child(2) { width: 12%; }
+        main table.schedule.no-event.with-notes th:nth-child(3) { width: 22%; }
+        main table.schedule.no-event.with-notes th:nth-child(4) { width: 47%; }
+        main table.schedule.no-event.with-notes th:nth-child(5) { width: 12%; }
+        main table.schedule.with-notes:not(.no-event) { min-width: 880px; }
+        main table.schedule.with-notes:not(.no-event) th:nth-child(1) { width: 6%; }
+        main table.schedule.with-notes:not(.no-event) th:nth-child(2) { width: 10%; }
+        main table.schedule.with-notes:not(.no-event) th:nth-child(3) { width: 11%; }
+        main table.schedule.with-notes:not(.no-event) th:nth-child(4) { width: 19%; }
+        main table.schedule.with-notes:not(.no-event) th:nth-child(5) { width: 42%; }
+        main table.schedule.with-notes:not(.no-event) th:nth-child(6) { width: 12%; }
+        main table.schedule td.notes {
+            text-align: left;
+            white-space: nowrap;
+        }
+        main table.schedule th,
+        main table.schedule td { overflow-wrap: break-word; }
+        main table.schedule tbody + tbody tr:first-child td { border-top: 3px solid #b8bec6; }
+        main table.schedule tbody.block-b { background: #f3f5f7; }
+        main table.schedule tbody.due { background: #fff6e5; }
+        main table.schedule tbody.due tr:first-child td { border-top: 2px solid #e6d3a5; }
+        main table.schedule tbody.makeup { background: #fff5f5; }
+        main table.schedule tbody.makeup tr:first-child td {
+            border-top: 2px solid #e0b4b4;
+            color: #c00;
+        }
+        main table.schedule .makeup-note { color: #c00; }
+        main table.schedule tr.presentation td {
+            background: #e5f4e8;
+            border-top: 1px solid #c5ddc9;
+        }
+        main table.schedule td.week {
+            white-space: nowrap;
+            color: #444;
+            text-align: center;
+            width: 3.2em;
+        }
+        main table.schedule td.date {
+            white-space: nowrap;
+        }
+        main table.schedule:not(.no-event) th:nth-child(3),
+        main table.schedule.no-event th:nth-child(2) {
+            white-space: nowrap;
+        }
+        main table.schedule ul.readings {
+            margin: 0;
+            padding-left: 1.15em;
+        }
+        main table.schedule ul.readings li {
+            margin: 0 0 0.25rem;
+        }
+        main table.schedule ul.readings li:last-child { margin-bottom: 0; }
+        main table.schedule .schedule-section + .schedule-section {
+            margin-top: 0.65rem;
+            padding-top: 0.55rem;
+            border-top: 1px solid #d9dee3;
+        }
+        main table.schedule .schedule-label {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        @media (max-width: 768px) {
+            .wrap { padding: 1rem 1rem 3rem; }
+            main h1 { font-size: 1.5rem; }
+            .course-header { flex-direction: column; }
+            .course-header-image { max-width: none; width: 100%; }
+            main th, main td { padding: 0.4rem 0.5rem; }
+        }
+        .page-list { list-style: none; margin-left: 0; }
+        .page-list li {
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .page-list a { text-decoration: none; font-weight: 500; }
+        .page-list a:hover { text-decoration: underline; }
+        .page-list .description { display: block; color: #666; font-size: 0.9rem; margin-top: 0.25rem; }
+        .lang-toggle-global {
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1;
+            white-space: nowrap;
+            color: #888;
+            text-align: right;
+            margin: 0 0 0.8rem;
+        }
+        .lang-toggle-global button {
+            background: none;
+            border: none;
+            padding: 0;
+            color: #0066cc;
+            cursor: pointer;
+            font: inherit;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .lang-toggle-global button.is-active {
+            color: #333;
+            font-weight: 600;
+            cursor: default;
+            pointer-events: none;
+        }
+        .i18n-block .lang-zh { display: none; }
+        body.lang-zh .i18n-block .lang-en { display: none; }
+        body.lang-zh .i18n-block .lang-zh { display: block; }
+        body.lang-zh .i18n-block span.lang-zh { display: inline; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <main>
+            <p class="updated i18n-block"><span class="lang-en">Last updated: Oct 30, 2026</span><span class="lang-zh" lang="zh-Hant">最後更新：2026年10月30日</span></p>
+<p class="i18n-block"><a href="../"><span class="lang-en">Assignments</span><span class="lang-zh" lang="zh-Hant">作業</span></a> · <a href="../../"><span class="lang-en">CHI 3242 syllabus</span><span class="lang-zh" lang="zh-Hant">CHI 3242 課程大綱</span></a></p>
+<h1 class="i18n-block"><span class="lang-en">Assignment 2: Train Your Own Text Classifier</span><span class="lang-zh" lang="zh-Hant">作業2：訓練自己的文本分類器</span></h1>
+
+<style>
+.lr-flex { display: flex; gap: 1.5rem; align-items: flex-start; }
+.lr-flex .lr-text { flex: 1; min-width: 0; }
+.lr-flex .lr-fig { flex: 0 0 260px; }
+.lr-flex .lr-fig img { width: 100%; height: auto; }
+@media (max-width: 700px) {
+  .lr-flex { flex-direction: column-reverse; align-items: stretch; }
+  .lr-flex .lr-fig { flex: none; }
+}
+</style>
+
+<div class="i18n-block">
+<div class="lang-en">
+<p><strong>Due:</strong> 11 Nov, 9:00 am</p>
+<div class="lr-flex">
+<div class="lr-text">
+<p>In this course we have learned how to train our own logistic regression classifier to estimate the sentiment of a text (positive versus negative). This way we operationalized <a href="https://www.youtube.com/watch?v=4ec0lSd7qH4">Kurt Vonnegut's argument about the Shapes of Stories</a>. In this assignment, you are asked to choose a <strong>binary</strong> problem of your own: a question that can be answered by assigning one of two labels to a piece of text. It can be positive versus negative sentiment, embodied versus abstract language, Cao Xueqin versus Gao E (authorship), or any other distinction that interests you. Define what each label means, prepare and label your own training data, and train a logistic regression classifier using the methods from class. You may use AI to help label your training data, but do it carefully: check a sample yourself, since AI labels can be wrong or biased.</p>
+</div>
+<div class="lr-fig">
+<img src="sigmoid.png" alt="The logistic (sigmoid) function: an S-shaped curve mapping any score z to a probability between 0 and 1" />
+</div>
+</div>
+<p>Having trained the model, use it on another text of your choice. Report how well it works, look at where it goes wrong, and say what its predictions tell you about that text.</p>
+<hr />
+<p>On Moodle, submit two things: the URL of one public GitHub repository and a PDF of your report. The core deliverables are the <strong>PDF report</strong>, your <strong>data</strong>, and your <strong>code</strong>, all in the repository (no name or student ID). The repository must include:</p>
+<ul>
+<li><code>README.md</code> (research question, label definitions, data sources, and how to run your code)</li>
+<li><code>data/</code> (labeled training data as a CSV, one text item and label per row; plus the analysis text if you may share it)</li>
+<li>Python script(s) (<code>.py</code>) for preparing, splitting, training, evaluating, and applying the model</li>
+<li><code>output/</code> (test-set predictions and evaluation results, plus predictions for your analysis text)</li>
+<li><code>report.md</code> <strong>and</strong> <code>report.pdf</code>, <strong>2,000–2,500 characters</strong>. Submit the PDF separately on Moodle. It should not be a raw Markdown export; format it cleanly, with no Markdown syntax showing.</li>
+<li>Optional: an <strong>interactive analysis page</strong> (a GitHub Pages site, as before) to visualize and explore the predictions.</li>
+</ul>
+<p><strong>Method requirements:</strong></p>
+<ul>
+<li>Choose a <strong>binary</strong> task with two clearly defined labels.</li>
+<li>Pick a consistent unit (sentence, review, post, or paragraph) and explain your labeling rules.</li>
+<li>Prepare at least <strong>200 labeled items per class</strong> (more is better), keeping the two classes reasonably balanced.</li>
+<li>Split the data into training (80%) and test (20%) sets before fitting, stratified by label with a fixed random seed.</li>
+<li>Train a <code>LogisticRegression</code> classifier. Think about your features: frequencies of the most common 200 words? TF-IDF values? z-scores?</li>
+<li>Evaluate on the test set: accuracy, confusion matrix, precision, recall, and F1.</li>
+<li>Apply the model to a separate text of your choice and show the predicted labels (and probabilities if useful).</li>
+<li>Optional: build an interactive GitHub Pages page to explore the results.</li>
+</ul>
+<p>The <strong>report</strong> (2,000–2,500 characters) should read as a short, well-argued essay, not a checklist. Introduce your question and why the distinction matters. Describe your labels, data, and preparation, plus the train/test split and features used. Present your test-set results (accuracy and confusion matrix) and interpret the errors: which items were misclassified, and what patterns or ambiguities explain them? Then analyze the predictions on your separate text and be cautious about taking the model’s labels at face value. Conclude with the limits of your data, labels, and model, and what you would change.</p>
+<p>You may use AI to help with coding or writing, but the report must be your own analysis. A fully AI-generated report will receive <strong>0 points</strong>; if in doubt, the instructor may ask you to explain your workflow and results.</p>
+<p>You may work alone or in a group of up to <strong>3 people</strong>. A group works in <strong>one shared GitHub repository</strong> and writes <strong>one report</strong>: every member submits the same repository URL and the same PDF on Moodle. List all members' names only in the Moodle upload; names should not appear in the repository.</p>
+</div>
+<div class="lang-zh" lang="zh-Hant">
+<p><strong>截止：</strong>11月11日 上午9:00</p>
+<div class="lr-flex">
+<div class="lr-text">
+<p>在課程中，我們已經學過如何訓練自己的邏輯迴歸分類器，來估計一段文本的情感（正面或負面）。這樣一來，我們把 <a href="https://www.youtube.com/watch?v=4ec0lSd7qH4">Kurt Vonnegut 關於「故事形狀」（Shapes of Stories）的論點</a>操作化了。這次作業請你自選一個<strong>二元</strong>問題：一個可以透過替文本指定兩種標籤之一來回答的問題。可以是正面／負面情感、具體／抽象語言、曹雪芹／高鶚（作者歸屬），或任何你感興趣的區分。請定義每個標籤的意義，準備並標註自己的訓練資料，然後運用課堂所學的方法訓練邏輯迴歸分類器。你可以使用 AI 協助標註訓練資料，但請謹慎：自行抽樣檢查，因為 AI 標註可能出錯或有偏誤。</p>
+</div>
+<div class="lr-fig">
+<img src="sigmoid.png" alt="邏輯斯（sigmoid）函數：一條 S 形曲線，把任何分數 z 對應到 0 與 1 之間的機率" />
+</div>
+</div>
+<p>訓練好模型之後，請把它用在另一段你自選的文本上。報告它的表現如何、看看它在哪裡出錯，並說明它的預測對這段文本說明了什麼。</p>
+<hr />
+<p>請在 Moodle 提交兩項：一個公開 GitHub 倉庫的網址，以及報告的 PDF 檔。核心交付物是<strong>PDF 報告</strong>、你的<strong>資料</strong>與<strong>程式碼</strong>，都放在倉庫裡（不放姓名或學號）。倉庫須包含：</p>
+<ul>
+<li><code>README.md</code>（研究問題、標籤定義、資料來源，以及執行程式碼的方法）</li>
+<li><code>data/</code>（標註訓練資料 CSV，每列一筆文本與標籤；若可公開，也放入分析文本）</li>
+<li>用於準備、切分、訓練、評估與應用模型的 Python 腳本（<code>.py</code>）</li>
+<li><code>output/</code>（測試集預測與評估結果，以及分析文本的預測）</li>
+<li><code>report.md</code> <strong>與</strong> <code>report.pdf</code>，<strong>2,000–2,500字</strong>。PDF 另外也要在 Moodle 提交。PDF 不應只是 Markdown 的直接匯出，請排版整齊，不要出現 Markdown 編輯符號。</li>
+<li>可選：一個<strong>互動式分析頁面</strong>（GitHub Pages 網站，如同你之前做過的），視覺化並探索預測結果。</li>
+</ul>
+<p><strong>方法要求：</strong></p>
+<ul>
+<li>選擇一個<strong>二元</strong>任務，定義兩個清楚的標籤。</li>
+<li>選定一致的文本單位（句子、評論、貼文或段落），並說明標註規則。</li>
+<li><strong>每一類至少準備200筆</strong>標註文本（越多越好），兩類數量盡量平衡。</li>
+<li>先將資料切分為訓練集（80%）與測試集（20%），按標籤分層並設定固定隨機種子。</li>
+<li>訓練 <code>LogisticRegression</code> 分類器。請思考你的特徵：是最常見200個詞的詞頻？TF-IDF 值？還是 z-score？</li>
+<li>在測試集上評估：準確率、混淆矩陣、精確率、召回率與 F1。</li>
+<li>把模型用在另一段自選文本上，呈現預測標籤（若有幫助也可呈現機率）。</li>
+<li>可選：建立互動式 GitHub Pages 頁面來探索結果。</li>
+</ul>
+<p><strong>報告</strong>（2,000–2,500字）應該是一篇論證清楚的短文，而不是條列式的檢查清單。請介紹你的問題及其重要性，描述標籤、資料與處理方式，以及訓練／測試切分和所用的特徵。呈現測試集結果（準確率與混淆矩陣）並詮釋錯誤：哪些文本被錯誤分類？有何共同模式或歧義？接著分析分類器對另一組文本的預測，並小心不要全盤接受模型的標籤。最後反思資料、標籤與模型的限制，以及你會如何改進。</p>
+<p>你可以使用人工智能協助撰寫程式或報告，但報告必須是你自己的分析。完全由 AI 生成的報告將獲得<strong>0分</strong>；如有疑慮，教師可能會個別要求你解釋工作流程與結果。</p>
+<p>你可以單獨完成，也可以組成最多<strong>3人</strong>的小組合作。若以小組進行，全組共用<strong>一個 GitHub 倉庫</strong>，並合寫<strong>一份報告</strong>：每位成員在 Moodle 提交相同的倉庫網址與相同的 PDF。所有成員姓名只列在 Moodle 上傳中；姓名不應出現在倉庫裡。</p>
+</div>
+</div>
+
+        </main>
+    </div>
+    <script>
+        (function () {
+            var blocks = document.querySelectorAll(".i18n-block");
+            if (!blocks.length) return;
+
+            var main = document.querySelector("main");
+            if (!main) return;
+
+            var savedLang = localStorage.getItem("preferredLanguage");
+            var initialLang = savedLang === "zh" ? "zh" : "en";
+            document.body.classList.toggle("lang-zh", initialLang === "zh");
+
+            var toggle = document.createElement("div");
+            toggle.className = "lang-toggle-global";
+            toggle.innerHTML = '<button type="button" data-lang="en">English</button> | <button type="button" data-lang="zh">中文</button>';
+            main.insertBefore(toggle, main.firstChild);
+
+            function setLang(lang) {
+                var isZh = lang === "zh";
+                document.body.classList.toggle("lang-zh", isZh);
+                localStorage.setItem("preferredLanguage", isZh ? "zh" : "en");
+                toggle.querySelectorAll("button").forEach(function (b) {
+                    b.classList.toggle("is-active", b.getAttribute("data-lang") === (isZh ? "zh" : "en"));
+                });
+            }
+
+            setLang(initialLang);
+            toggle.addEventListener("click", function (e) {
+                var btn = e.target.closest("button");
+                if (!btn) return;
+                setLang(btn.getAttribute("data-lang"));
+            });
+        })();
+        document.addEventListener("click", function (e) {
+            var link = e.target.closest('a[href="#"]');
+            if (link) e.preventDefault();
+        });
+        (function () {
+            document.querySelectorAll(".prompt").forEach(function (prompt) {
+                var pre = prompt.querySelector("pre");
+                var label = prompt.querySelector(".prompt-label");
+                if (!pre || !label) return;
+                var btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "copy-btn";
+                btn.textContent = "Copy";
+                btn.addEventListener("click", function () {
+                    var text = pre.innerText;
+                    var done = function () {
+                        btn.textContent = "Copied";
+                        btn.classList.add("copied");
+                        setTimeout(function () {
+                            btn.textContent = "Copy";
+                            btn.classList.remove("copied");
+                        }, 1500);
+                    };
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(text).then(done).catch(fallbackCopy);
+                    } else {
+                        fallbackCopy();
+                    }
+                    function fallbackCopy() {
+                        var ta = document.createElement("textarea");
+                        ta.value = text;
+                        ta.style.position = "fixed";
+                        ta.style.opacity = "0";
+                        document.body.appendChild(ta);
+                        ta.select();
+                        try { document.execCommand("copy"); done(); } catch (err) {}
+                        document.body.removeChild(ta);
+                    }
+                });
+                label.appendChild(btn);
+            });
+        })();
+    </script>
+</body>
+</html>

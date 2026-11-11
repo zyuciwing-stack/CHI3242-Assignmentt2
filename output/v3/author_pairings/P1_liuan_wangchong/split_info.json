@@ -1,0 +1,45 @@
+{
+  "pair": "P1_liuan_wangchong",
+  "west_author": "劉安",
+  "east_author": "王充",
+  "test_authors": [
+    "劉安",
+    "王充"
+  ],
+  "train_authors_full": [
+    "何休",
+    "劉向",
+    "劉歆",
+    "司馬談",
+    "司馬遷",
+    "應劭",
+    "揚雄",
+    "桓譚",
+    "王褒",
+    "王逸",
+    "班固",
+    "趙岐",
+    "鄭玄"
+  ],
+  "train_authors_zip": [
+    "揚雄",
+    "桓譚"
+  ],
+  "test_sentences": 678,
+  "test_period": {
+    "東漢": 581,
+    "西漢": 97
+  },
+  "train_full_sentences": 976,
+  "train_full_period": {
+    "西漢": 605,
+    "東漢": 371
+  },
+  "train_zip_sentences": 180,
+  "train_zip_period": {
+    "西漢": 118,
+    "東漢": 62
+  },
+  "baseline": 0.8569321533923304,
+  "baseline_class": "東漢"
+}

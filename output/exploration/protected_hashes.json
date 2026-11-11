@@ -1,0 +1,9 @@
+{
+  "corpus_catalogue.csv": "f5a4ed83915a3963c8c9e6e5bc648df1d2dcb5164fe4d86ca468d513d51d24cd",
+  "data\\v3\\dataset_v3.csv": "87335fee6d029cb8401b4e0e5a5e722915608369ee6901d41a8a10e5df21d261",
+  "data\\v3\\sentences_all.csv": "12cc4419982f6fd03113cfbbd58a1dc6c06e9d05c4a8983ab1fe39be3be3560c",
+  "data\\v3\\sources.csv": "a6ddf426dfd4262e14dd8e64e9d6c3237adf5946032c8e4b30a543014bcf6981",
+  "output\\v3\\metrics.json": "bdba45aa0f2fbcba99c657ca018797cbfdd82c3be08c73cb760792ad0813cabc",
+  "output\\v3\\test_predictions.csv": "4e5fb89550a640d60210a738ee369b457dd000eb847473c18ed461e6101cb615",
+  "output\\v3\\independent_predictions.csv": "8997a66cd2aa2028d3c326143b774444a76367095c7e2c5261e32591471fd532"
+}

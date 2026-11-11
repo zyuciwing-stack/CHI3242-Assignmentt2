@@ -1,0 +1,18 @@
+{
+  "tokenizer": "WordNgramTokenizer",
+  "tokenizer_class": "jiayan.WordNgramTokenizer",
+  "jiayan_version": "0.0.21",
+  "opencc": "opencc.OpenCC('t2s')",
+  "opencc_package_version": "0.1.7",
+  "char_hmm_kenlm_available": false,
+  "kenlm_blocker": "KenLM build failed on Windows (no C/C++ compiler; NMake generator platform error); official jiayan.klm model not loaded.",
+  "main_tokenizer_model": null,
+  "dict_path": "C:\\CHI3242文本發掘\\第二次作業\\output\\tokenizer_comparison\\venv\\Lib\\site-packages\\jiayan\\data\\dict.txt",
+  "dict_sha256": "a21d687570b1c39a153ed7d7624b74003f9ca191019eba16603b63e6d88acd30",
+  "n_main": 1163,
+  "n_chaoyi": 129,
+  "input_main_sha256": "87335fee6d029cb8401b4e0e5a5e722915608369ee6901d41a8a10e5df21d261",
+  "input_sentences_sha256": "12cc4419982f6fd03113cfbbd58a1dc6c06e9d05c4a8983ab1fe39be3be3560c",
+  "tokens_main_sha256": "2cc5a1d64048064f92538157276d238e01235a7333db735db638d922bcbf39a2",
+  "tokens_chaoyi_sha256": "d78cfabc270de6d1262a42ce3ccf90fb65a50843dc74ed1e848c12e0389da659"
+}

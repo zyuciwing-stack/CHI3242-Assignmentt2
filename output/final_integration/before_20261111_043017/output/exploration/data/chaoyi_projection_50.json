@@ -1,0 +1,21 @@
+{
+  "work_id": "E01",
+  "work_title": "論衡·超奇",
+  "author": "王充",
+  "period": "東漢",
+  "sentence_count": 129,
+  "token_count": 1438,
+  "n_features": 50,
+  "feature_overlap_count": 325,
+  "feature_overlap_ratio": 0.22600834492350486,
+  "PC1": -1.5621176169456885,
+  "PC2": 0.4417465577118902,
+  "PC3": 0.45630091367682724,
+  "excluded_from_fit": true,
+  "fit_work_count": 52,
+  "base_page": "論衡/39",
+  "base_url": "https://zh.wikisource.org/wiki/論衡/39",
+  "fixed_url": "https://zh.wikisource.org/w/index.php?oldid=2326276",
+  "revision": "2326276",
+  "excerpt_range": "全篇"
+}

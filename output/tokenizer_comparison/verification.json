@@ -1,0 +1,217 @@
+{
+  "checks": [
+    {
+      "check": "main sample 1163",
+      "ok": true,
+      "detail": "1163"
+    },
+    {
+      "check": "fixed split 930/233",
+      "ok": true,
+      "detail": "930/233"
+    },
+    {
+      "check": "split period counts",
+      "ok": true,
+      "detail": "{'西漢': 505, '東漢': 425} / {'西漢': 127, '東漢': 106}"
+    },
+    {
+      "check": "train/test IDs disjoint",
+      "ok": true,
+      "detail": "no overlap"
+    },
+    {
+      "check": "jieba token rows",
+      "ok": true,
+      "detail": "1163/129"
+    },
+    {
+      "check": "jieba token IDs/order match main",
+      "ok": true,
+      "detail": "same order"
+    },
+    {
+      "check": "jieba token split match",
+      "ok": true,
+      "detail": "same split"
+    },
+    {
+      "check": "jieba no empty token rows",
+      "ok": true,
+      "detail": "all positive"
+    },
+    {
+      "check": "jiayan token rows",
+      "ok": true,
+      "detail": "1163/129"
+    },
+    {
+      "check": "jiayan token IDs/order match main",
+      "ok": true,
+      "detail": "same order"
+    },
+    {
+      "check": "jiayan token split match",
+      "ok": true,
+      "detail": "same split"
+    },
+    {
+      "check": "jiayan no empty token rows",
+      "ok": true,
+      "detail": "all positive"
+    },
+    {
+      "check": "Jieba baseline 148/233",
+      "ok": true,
+      "detail": "0.635193, [[100, 27], [58, 48]]"
+    },
+    {
+      "check": "Jieba macro F1",
+      "ok": true,
+      "detail": "0.616070563148202"
+    },
+    {
+      "check": "Jiayan 167/233",
+      "ok": true,
+      "detail": "0.716738, [[100, 27], [39, 67]]"
+    },
+    {
+      "check": "Jiayan macro F1",
+      "ok": true,
+      "detail": "0.7109398496240602"
+    },
+    {
+      "check": "comparison_metrics matches JSON",
+      "ok": true,
+      "detail": "accuracy rows"
+    },
+    {
+      "check": "paired four cells sum 233",
+      "ok": true,
+      "detail": "{'n': 233, 'both_right': 122, 'both_wrong': 40, 'jieba_wrong_jiayan_right': 45, 'jieba_right_jiayan_wrong': 26, 'accuracy_delta': 0.0815450643776825, 'macro_f1_delta': 0.09486928647585824, 'east_recall_delta': 0.17924528301886788, 'net_correct': 19, 'mcnemar_binomial_p_exploratory': 0.03192716208321237, 'mcnemar_note': 'paired exact binomial on discordant pairs; sentences within works are not independent; exploratory only'}"
+    },
+    {
+      "check": "paired net equation",
+      "ok": true,
+      "detail": "45-26=19"
+    },
+    {
+      "check": "zero/one feature counts",
+      "ok": true,
+      "detail": "(7, 20, 1, 0)"
+    },
+    {
+      "check": "TF-IDF/LogReg settings",
+      "ok": true,
+      "detail": "{'token_pattern': '(?u)\\\\b\\\\w+\\\\b', 'min_df': 2, 'max_df': 0.9, 'sublinear_tf': True, 'ngram_range': [1, 1]} / {'max_iter': 2000, 'random_state': 42, 'class_weight': None, 'C': 1.0, 'solver': 'lbfgs'}"
+    },
+    {
+      "check": "Jieba saved baseline reproduced",
+      "ok": true,
+      "detail": "{'label_mismatch': 0, 'prob_max_abs_diff': 8.326672684688674e-17, 'n': 233, 'saved_correct': 148, 'rerun_correct': 148}"
+    },
+    {
+      "check": "Jieba Chaoyi baseline reproduced",
+      "ok": true,
+      "detail": "{'label_mismatch': 0, 'prob_max_abs_diff': 0.0, 'saved_east': 56, 'rerun_east': 56, 'n': 129}"
+    },
+    {
+      "check": "paired_predictions schema",
+      "ok": true,
+      "detail": "['sent_id', 'jieba_pred', 'jieba_prob_east', 'jieba_correct', 'jiayan_pred', 'jiayan_prob_east', 'jiayan_correct', 'work_id', 'work_title', 'author', 'genre', 'genre_group', 'period_true', 'text_original', 'text_normalized', 'jieba_tokens', 'jiayan_tokens', 'improvement']"
+    },
+    {
+      "check": "paired_predictions unique IDs",
+      "ok": true,
+      "detail": "233"
+    },
+    {
+      "check": "independent_comparison 129",
+      "ok": true,
+      "detail": "129"
+    },
+    {
+      "check": "Chaoyi 56/90",
+      "ok": true,
+      "detail": "{'jieba': {'n': 129, 'east': 56, 'west': 73, 'zero_features': 7, 'one_feature': 8, 'prob_east_mean': 0.48895412696696217}, 'jiayan': {'n': 129, 'east': 90, 'west': 39, 'zero_features': 0, 'one_feature': 1, 'prob_east_mean': 0.5495647051273871}}"
+    },
+    {
+      "check": "OpenCC control does not replace baseline",
+      "ok": true,
+      "detail": "{\"metrics\": {\"accuracy\": 0.6351931330472103, \"balanced_accuracy\": 0.6177759619670182, \"macro_f1\": 0.6110947471772215, \"weighted_f1\": 0.6198200248198036, \"majority_class\": \"西漢\", \"majority_baseline\": 0.5450643776824035, \"confusion_matrix\": [[103, 24], [61, 45]], \"precision\": {\"西漢\": 0.6280487804878049, \"東漢\": 0.6521739130434783}, \"recall\": {\"西漢\": 0.8110236220472441, \"東漢\": 0.42452830188679247}, \"f1\": {\"西漢\": 0.7079037800687286, \"東漢\": 0.5142857142857142}, \"support\": {\"西漢\": 127, \"東漢\": 106}, \"vocabulary_"
+    },
+    {
+      "check": "Jiayan metadata blocker recorded",
+      "ok": true,
+      "detail": "{\"tokenizer\": \"WordNgramTokenizer\", \"tokenizer_class\": \"jiayan.WordNgramTokenizer\", \"jiayan_version\": \"0.0.21\", \"opencc\": \"opencc.OpenCC('t2s')\", \"opencc_package_version\": \"0.1.7\", \"char_hmm_kenlm_available\": false, \"kenlm_blocker\": \"KenLM build failed on Windows (no C/C++ compiler; NMake generator platform error); official jiayan.klm model not loaded.\", \"main_tokenizer_model\": null, \"dict_path\": \"C:\\\\CHI3242文本發掘\\\\第二次作業\\\\output\\\\tokenizer_comparison\\\\venv\\\\Lib\\\\site-packages\\\\jiayan\\\\data\\\\dict.txt\", \"dict_sha256\": \"a21d687570b1c39a153ed7d7624b74003f9ca191019eba16603b63e6d88acd30\", \"n_main\": 1"
+    },
+    {
+      "check": "segmentation sample 20 stratified",
+      "ok": true,
+      "detail": "20"
+    },
+    {
+      "check": "segmentation outcome-selected cases",
+      "ok": true,
+      "detail": "{'改善（按結果選出）': 5, '退步（按結果選出）': 5}"
+    },
+    {
+      "check": "term audit covers names/books/terms/function words",
+      "ok": true,
+      "detail": "['鴻儒', '文人', '文辭', '詩賦', '孔子', '屈原', '春秋', '而']"
+    },
+    {
+      "check": "review discloses AI-assisted, non-gold limitation",
+      "ok": true,
+      "detail": "AI-assisted caveat present"
+    },
+    {
+      "check": "prior data/model/exploration/report files unchanged",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "report.docx/html equal post-sync hashes",
+      "ok": true,
+      "detail": "post-sync versions kept"
+    },
+    {
+      "check": "report.md/pdf unchanged",
+      "ok": true,
+      "detail": "md/pdf hashes"
+    },
+    {
+      "check": "required deliverables exist",
+      "ok": true,
+      "detail": "[]"
+    }
+  ],
+  "passed": 37,
+  "failed": 0,
+  "known_limitations": [
+    "Jiayan's recommended CharHMMTokenizer requires KenLM/jiayan.klm; KenLM could not be built in this Windows environment. The comparison uses the official WordNgramTokenizer.",
+    "Jiayan input is OpenCC t2s; Jieba keeps the original traditional text. Jieba-on-OpenCC is reported as an exploratory control, not as the main baseline.",
+    "Jieba keeps 35 project-specific user words; Jiayan uses its bundled dictionary without a post-hoc custom lexicon.",
+    "One fixed split and one corpus version; sentences within works are not independent.",
+    "Chaoyi is an already-analysed same-author holdout, not a new cross-author blind test.",
+    "The AI-assisted segmentation review is not a human token-level gold standard."
+  ],
+  "hashes": {
+    "report.md": "d0fe697cfc3ce9207a3d9c667350d7299cc60300991cea518b9882a16616bfc0",
+    "report.pdf": "b174586f87970274d73fb46dbe6261453783ec85457f5894f6323f9dfd42322f",
+    "report.docx": "7bca51e7ac7ba344b408959b15d7d4e0b9b04add5a6d71df7de7e0c576753159",
+    "report.html": "8897903909774b7bf68ca4ec539876b271afbf1ea1092fe3e425fddf2770cab1",
+    "dataset_v3": "87335fee6d029cb8401b4e0e5a5e722915608369ee6901d41a8a10e5df21d261",
+    "tokens_jieba_main": "6b860999bd37c306023bdaf2dc665a6adfd9b3746af8261c0188e32a2355723a",
+    "tokens_jiayan_main": "2cc5a1d64048064f92538157276d238e01235a7333db735db638d922bcbf39a2",
+    "paired_predictions": "21e4731470c737fd07948c318d1c0387d248c22ae201d365cb57d78c939a6530"
+  },
+  "environment": {
+    "classifier": "original project venv; Python 3.12.10; scikit-learn 1.9.1; pandas 3.0.6; numpy 2.5.3; jieba 0.42.1",
+    "jiayan": "isolated venv; Python 3.12.10; jiayan 0.0.21; python-crfsuite 0.9.12; opencc-python-reimplemented 0.1.7",
+    "kenlm": "not installed; build failed (no C/C++ compiler; NMake CMake platform error)",
+    "jiayan_tokenizer": "WordNgramTokenizer",
+    "jiayan_model": null,
+    "opencc": "t2s, Jiayan arm only"
+  }
+}

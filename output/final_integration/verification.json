@@ -1,0 +1,36 @@
+{
+  "main_counts": {
+    "正文可見非空白字元含標點表格標題": 2500,
+    "正文漢字": 2003
+  },
+  "pdf_pages": 11,
+  "pdf_all_pages_visually_inspected": true,
+  "all_catalogue_ids_present": 70,
+  "reference_style_geometry_preserved": true,
+  "footnotes": 4,
+  "protected_data_and_model_files_unchanged": 83,
+  "exploration_checks_passed": 80,
+  "exploration_checks_failed": 0,
+  "exploration_checks_by_category": {
+    "program": 61,
+    "browser": 9,
+    "interpretation": 10
+  },
+  "javascript_syntax_check": true,
+  "new_html_browser_visual_check": "headless interaction/DOM check completed; actual mouse drag/zoom not simulated",
+  "new_html_browser_check_record": "output/exploration/browser_check.md",
+  "model_main_correct": 148,
+  "model_main_test": 233,
+  "chaoyi_correct": 56,
+  "chaoyi_sentences": 129,
+  "backup": "C:\\CHI3242文本發掘\\第二次作業\\output\\final_integration\\before_20261111_043017",
+  "delivered_hashes": {
+    "report.docx": "a544d5067807be6fee2add3d889356fa032100ad62a4bbad9372c544ac5a6840",
+    "report.pdf": "5ca94d9bf0fc10f301b6e1b900b9f380c4642bf97789b337cb3f94d4f55b4d0f",
+    "report.md": "72b446ba1870b61d72b3164f02a6196e14f28cb2630457fc8623482c10931aae",
+    "report.html": "85140fcd7fd1a9c3b2cab8d8e0d49832fde2e0a8f301c50321bc366c08eca384",
+    "corpus_catalogue.csv": "f5a4ed83915a3963c8c9e6e5bc648df1d2dcb5164fe4d86ca468d513d51d24cd",
+    "corpus_catalogue.md": "dc2d9da14038ad748bd666c03b7e990c2792eb58d520a82e87d51b64a27d6390"
+  },
+  "authorized_catalogue_citation_revision": "source_revision.json"
+}

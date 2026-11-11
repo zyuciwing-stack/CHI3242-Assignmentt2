@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "accuracy": 0.6351931330472103,
+    "balanced_accuracy": 0.6177759619670182,
+    "macro_f1": 0.6110947471772215,
+    "weighted_f1": 0.6198200248198036,
+    "majority_class": "西漢",
+    "majority_baseline": 0.5450643776824035,
+    "confusion_matrix": [
+      [
+        103,
+        24
+      ],
+      [
+        61,
+        45
+      ]
+    ],
+    "precision": {
+      "西漢": 0.6280487804878049,
+      "東漢": 0.6521739130434783
+    },
+    "recall": {
+      "西漢": 0.8110236220472441,
+      "東漢": 0.42452830188679247
+    },
+    "f1": {
+      "西漢": 0.7079037800687286,
+      "東漢": 0.5142857142857142
+    },
+    "support": {
+      "西漢": 127,
+      "東漢": 106
+    },
+    "vocabulary_size": 1244,
+    "test_zero_features": 6,
+    "test_one_feature": 14,
+    "prob_max": 0.8530061742921332,
+    "tokenizer": "jieba_on_opencc_simplified",
+    "note": "exploratory control, not a replacement for the main Jieba baseline"
+  },
+  "chaoyi_east": 63,
+  "chaoyi_zero_features": 3,
+  "token_total": 19778,
+  "token_mean": 17.006018916595014
+}

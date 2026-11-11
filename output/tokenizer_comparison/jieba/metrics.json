@@ -1,0 +1,66 @@
+{
+  "accuracy": 0.6351931330472103,
+  "balanced_accuracy": 0.6201158817411975,
+  "macro_f1": 0.616070563148202,
+  "weighted_f1": 0.6237931394535706,
+  "majority_class": "西漢",
+  "majority_baseline": 0.5450643776824035,
+  "confusion_matrix": [
+    [
+      100,
+      27
+    ],
+    [
+      58,
+      48
+    ]
+  ],
+  "precision": {
+    "西漢": 0.6329113924050633,
+    "東漢": 0.64
+  },
+  "recall": {
+    "西漢": 0.7874015748031497,
+    "東漢": 0.4528301886792453
+  },
+  "f1": {
+    "西漢": 0.7017543859649122,
+    "東漢": 0.5303867403314917
+  },
+  "support": {
+    "西漢": 127,
+    "東漢": 106
+  },
+  "vocabulary_size": 1125,
+  "test_zero_features": 7,
+  "test_one_feature": 20,
+  "prob_max": 0.8176456912517631,
+  "train_size": 930,
+  "test_size": 233,
+  "train_period": {
+    "西漢": 505,
+    "東漢": 425
+  },
+  "test_period": {
+    "西漢": 127,
+    "東漢": 106
+  },
+  "tfidf_params": {
+    "token_pattern": "(?u)\\b\\w+\\b",
+    "min_df": 2,
+    "max_df": 0.9,
+    "sublinear_tf": true,
+    "ngram_range": [
+      1,
+      1
+    ]
+  },
+  "logistic_params": {
+    "max_iter": 2000,
+    "random_state": 42,
+    "class_weight": null,
+    "C": 1.0,
+    "solver": "lbfgs"
+  },
+  "tokenizer": "jieba"
+}

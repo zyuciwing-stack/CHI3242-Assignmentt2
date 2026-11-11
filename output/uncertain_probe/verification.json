@@ -1,0 +1,111 @@
+{
+  "model": "output/v3/model.joblib",
+  "mode": "inference_only_no_refit",
+  "gold_labels": "unknown; no accuracy or F1 computed",
+  "source_hashes": {
+    "output\\v3\\model.joblib": "c484b7c28de562eb5b9bde8a16f03c8e296b4c06c15a5b52c4b66412e02504bf",
+    "data\\v3\\sentences_all.csv": "12cc4419982f6fd03113cfbbd58a1dc6c06e9d05c4a8983ab1fe39be3be3560c",
+    "data\\v3\\dataset_v3.csv": "87335fee6d029cb8401b4e0e5a5e722915608369ee6901d41a8a10e5df21d261",
+    "output\\v3\\test_predictions.csv": "4e5fb89550a640d60210a738ee369b457dd000eb847473c18ed461e6101cb615",
+    "output\\v3\\independent_predictions.csv": "8997a66cd2aa2028d3c326143b774444a76367095c7e2c5261e32591471fd532"
+  },
+  "runtime": {
+    "python": "3.12.10",
+    "sklearn": "1.9.0",
+    "jieba": "0.42.1"
+  },
+  "controls": {
+    "test": {
+      "sentences": 233,
+      "all_saved_predictions_reproduced": true,
+      "maximum_probability_difference": 8.326672684688674e-17
+    },
+    "chaoyi": {
+      "sentences": 129,
+      "all_saved_predictions_reproduced": true,
+      "maximum_probability_difference": 5.551115123125783e-17
+    }
+  },
+  "summaries": [
+    {
+      "work_id": "U01",
+      "title": "毛詩序（大序）",
+      "scope": "保存的全部句",
+      "n": 27,
+      "west": 14,
+      "east": 13,
+      "mean_prob_east": 0.46713867302294687,
+      "min_prob_east": 0.1767618532401089,
+      "max_prob_east": 0.6214023175123905,
+      "zero_feature_sentences": 1,
+      "exact_training_text_matches": 0
+    },
+    {
+      "work_id": "U01",
+      "title": "毛詩序（大序）",
+      "scope": "沿用原清理條件的句",
+      "n": 27,
+      "west": 14,
+      "east": 13,
+      "mean_prob_east": 0.46713867302294687,
+      "min_prob_east": 0.1767618532401089,
+      "max_prob_east": 0.6214023175123905,
+      "zero_feature_sentences": 1,
+      "exact_training_text_matches": 0
+    },
+    {
+      "work_id": "W17",
+      "title": "關尹子書錄",
+      "scope": "保存的全部句",
+      "n": 13,
+      "west": 11,
+      "east": 2,
+      "mean_prob_east": 0.3897644259718848,
+      "min_prob_east": 0.2409840119708663,
+      "max_prob_east": 0.5422425159938675,
+      "zero_feature_sentences": 2,
+      "exact_training_text_matches": 1
+    },
+    {
+      "work_id": "W17",
+      "title": "關尹子書錄",
+      "scope": "沿用原清理條件的句",
+      "n": 12,
+      "west": 10,
+      "east": 2,
+      "mean_prob_east": 0.40005756179165397,
+      "min_prob_east": 0.2409840119708663,
+      "max_prob_east": 0.5422425159938675,
+      "zero_feature_sentences": 2,
+      "exact_training_text_matches": 0
+    },
+    {
+      "work_id": "W18",
+      "title": "子華子書錄",
+      "scope": "保存的全部句",
+      "n": 19,
+      "west": 17,
+      "east": 2,
+      "mean_prob_east": 0.41470601619876807,
+      "min_prob_east": 0.26624679613465463,
+      "max_prob_east": 0.5282159862253792,
+      "zero_feature_sentences": 1,
+      "exact_training_text_matches": 1
+    },
+    {
+      "work_id": "W18",
+      "title": "子華子書錄",
+      "scope": "沿用原清理條件的句",
+      "n": 17,
+      "west": 15,
+      "east": 2,
+      "mean_prob_east": 0.4185921663621669,
+      "min_prob_east": 0.27488565671842086,
+      "max_prob_east": 0.5282159862253792,
+      "zero_feature_sentences": 0,
+      "exact_training_text_matches": 0
+    }
+  ],
+  "all_inputs_unchanged": true,
+  "runtime_caveat": "保存模型使用 scikit-learn 1.9.1，本次載入環境為 1.9.0，產生版本不一致警告；未安裝或變更環境。已重現233句測試與129句超奇的全部預測，機率最大差異分別為8.33e-17與5.55e-17；此核驗不等於版本完全一致。"
+}

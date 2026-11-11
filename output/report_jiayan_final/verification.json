@@ -1,0 +1,48 @@
+{
+  "checks": {
+    "jiayan_matrix_from_predictions": true,
+    "accuracy": true,
+    "西漢_precision": true,
+    "西漢_recall": true,
+    "西漢_F1": true,
+    "東漢_precision": true,
+    "東漢_recall": true,
+    "東漢_F1": true,
+    "macro_f1": true,
+    "chaoyi_90_of_129": true,
+    "paired_changes": true,
+    "quoted_test_errors": true,
+    "quoted_chaoyi_labels": true,
+    "sample_total": true,
+    "train_test_counts": true,
+    "all_prose_in_pdf": true,
+    "pdf_three_pages": true,
+    "pdf_no_markdown_markers": true,
+    "pdf_no_replacement_character": true,
+    "body_character_range": true,
+    "whole_report_character_range": true,
+    "protected_files_unchanged": true,
+    "source_manuscript_not_concurrently_changed": true,
+    "all_three_pages_visually_reviewed": true
+  },
+  "passed": 24,
+  "total": 24,
+  "missing_pdf_paragraphs": [],
+  "protected_changes": [],
+  "page_count": 3,
+  "counts": {
+    "body_visible_characters_including_headings_tables_punctuation_excluding_title": 2051,
+    "including_title": 2075,
+    "entire_report_visible_characters": 2494,
+    "body_han_characters": 1520,
+    "count_note": "字數按可見字元計，含標點、數字、表格與標題；Markdown語法、連結目標及空白不計。正文與含參考書目、AI說明的全篇均在2000至2500字元內。",
+    "experiments_run": false
+  },
+  "scope": "既存結果核對及報告製作；未訓練、未重新切分、未執行新實驗。",
+  "not_certified": [
+    "作者本人抽樣核查與認可分析",
+    "公開GitHub已更新",
+    "README主流程同步Jiayan",
+    "Moodle已提交"
+  ]
+}

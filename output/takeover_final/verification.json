@@ -1,0 +1,92 @@
+{
+  "checks": [
+    {
+      "check": "Jiayan confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "167 correct out of 233",
+      "passed": true
+    },
+    {
+      "check": "independent 90/129",
+      "passed": true
+    },
+    {
+      "check": "fixed 930/233",
+      "passed": true
+    },
+    {
+      "check": "prediction IDs equal frozen test IDs",
+      "passed": true
+    },
+    {
+      "check": "disjoint IDs",
+      "passed": true
+    },
+    {
+      "check": "body within 2000–2500",
+      "passed": true
+    },
+    {
+      "check": "Word has two real tables",
+      "passed": true
+    },
+    {
+      "check": "Word hyperlink fields",
+      "passed": true
+    },
+    {
+      "check": "Word no creator identity",
+      "passed": true
+    },
+    {
+      "check": "Word all prose/table fragments",
+      "passed": true
+    },
+    {
+      "check": "HTML all prose/table fragments",
+      "passed": true
+    },
+    {
+      "check": "review PDF all prose/table fragments",
+      "passed": true
+    },
+    {
+      "check": "review PDF four pages: prose plus references",
+      "passed": true
+    },
+    {
+      "check": "original root PDF preserved",
+      "passed": true
+    },
+    {
+      "check": "report.html local targets exist",
+      "passed": true
+    },
+    {
+      "check": "materials.html local targets exist",
+      "passed": true
+    },
+    {
+      "check": "output\\report_support\\corpus_appendix.html local targets exist",
+      "passed": true
+    },
+    {
+      "check": "70 appendix ID rows",
+      "passed": true
+    },
+    {
+      "check": "four pages visually inspected",
+      "passed": true
+    }
+  ],
+  "passed": 20,
+  "total": 20,
+  "counts": {
+    "body_visible_characters": 2318,
+    "all_visible_characters": 2763
+  },
+  "pdf_root_updated": false,
+  "github_verified": false
+}

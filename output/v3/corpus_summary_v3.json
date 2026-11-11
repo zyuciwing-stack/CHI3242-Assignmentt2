@@ -1,0 +1,84 @@
+{
+  "label": "v3 label-fix + new authors",
+  "total": 1654,
+  "by_period": {
+    "東漢": {
+      "sentences": 952,
+      "works": 31,
+      "authors": 8,
+      "genres": {
+        "子書": 643,
+        "序跋": 289,
+        "史書": 20
+      },
+      "max_work_share": 0.2237,
+      "max_work": "論衡·自紀",
+      "max_author_share": 0.6103,
+      "max_author": "王充",
+      "top_works": {
+        "論衡·自紀": 213,
+        "論衡·藝增": 141,
+        "論衡·對作": 118,
+        "論衡·佚文": 109,
+        "孟子題辭": 53,
+        "新論·正經": 41,
+        "楚辭章句敘": 33,
+        "詩譜序": 28
+      }
+    },
+    "西漢": {
+      "sentences": 702,
+      "works": 21,
+      "authors": 7,
+      "genres": {
+        "子書": 215,
+        "書錄/目錄": 211,
+        "史書": 104,
+        "書信": 92,
+        "學術評論": 46,
+        "論": 34
+      },
+      "max_work_share": 0.1382,
+      "max_work": "淮南子·要略",
+      "max_author_share": 0.3006,
+      "max_author": "劉向",
+      "top_works": {
+        "淮南子·要略": 97,
+        "史記·太史公自序（節選）": 82,
+        "報任少卿書（節選）": 50,
+        "法言·問神（節選）": 46,
+        "論六家要指": 46,
+        "法言·吾子（節選）": 44,
+        "孫卿書錄": 41,
+        "戰國策書錄": 40
+      }
+    }
+  },
+  "main_sample": {
+    "total": 1163,
+    "by_period": {
+      "西漢": 632,
+      "東漢": 531
+    },
+    "by_split": {
+      "train": 930,
+      "test": 233
+    },
+    "split_by_period": {
+      "東漢": {
+        "train": 425,
+        "test": 106
+      },
+      "西漢": {
+        "train": 505,
+        "test": 127
+      }
+    },
+    "works": 52,
+    "authors": 15,
+    "max_work_share": 0.0688,
+    "max_work": "史記·太史公自序（節選）",
+    "max_author_share": 0.1376,
+    "max_author": "劉向"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "n_works": 52,
+  "n_sentences": 1654,
+  "period_sentence_counts": {
+    "東漢": 952,
+    "西漢": 702
+  },
+  "period_work_counts": {
+    "東漢": 31,
+    "西漢": 21
+  },
+  "period_token_counts": {
+    "西漢": 9120,
+    "東漢": 9876
+  },
+  "short_works": [
+    {
+      "work_id": "W04",
+      "work_title": "與摯伯陵書",
+      "sentences": 3,
+      "tokens": 40,
+      "chars": 70
+    },
+    {
+      "work_id": "W08",
+      "work_title": "法言·寡見（節選）",
+      "sentences": 25,
+      "tokens": 187,
+      "chars": 300
+    },
+    {
+      "work_id": "W09",
+      "work_title": "法言·重黎（節選）",
+      "sentences": 3,
+      "tokens": 14,
+      "chars": 23
+    },
+    {
+      "work_id": "W14",
+      "work_title": "韓非子書錄",
+      "sentences": 16,
+      "tokens": 195,
+      "chars": 318
+    },
+    {
+      "work_id": "W15",
+      "work_title": "列子書錄",
+      "sentences": 13,
+      "tokens": 198,
+      "chars": 314
+    },
+    {
+      "work_id": "W16",
+      "work_title": "鄧析書錄",
+      "sentences": 14,
+      "tokens": 146,
+      "chars": 253
+    },
+    {
+      "work_id": "W19",
+      "work_title": "說苑敘錄",
+      "sentences": 2,
+      "tokens": 71,
+      "chars": 116
+    },
+    {
+      "work_id": "E14",
+      "work_title": "九歌序",
+      "sentences": 5,
+      "tokens": 62,
+      "chars": 111
+    },
+    {
+      "work_id": "E15",
+      "work_title": "天問序",
+      "sentences": 15,
+      "tokens": 154,
+      "chars": 269
+    },
+    {
+      "work_id": "E16",
+      "work_title": "九章序",
+      "sentences": 6,
+      "tokens": 42,
+      "chars": 70
+    },
+    {
+      "work_id": "E17",
+      "work_title": "遠遊序",
+      "sentences": 6,
+      "tokens": 65,
+      "chars": 116
+    },
+    {
+      "work_id": "E18",
+      "work_title": "卜居序",
+      "sentences": 4,
+      "tokens": 44,
+      "chars": 85
+    },
+    {
+      "work_id": "E19",
+      "work_title": "漁父序",
+      "sentences": 4,
+      "tokens": 36,
+      "chars": 71
+    },
+    {
+      "work_id": "E20",
+      "work_title": "九辯序",
+      "sentences": 7,
+      "tokens": 98,
+      "chars": 172
+    },
+    {
+      "work_id": "E21",
+      "work_title": "招魂序",
+      "sentences": 6,
+      "tokens": 55,
+      "chars": 88
+    },
+    {
+      "work_id": "E22",
+      "work_title": "大招序",
+      "sentences": 4,
+      "tokens": 51,
+      "chars": 95
+    },
+    {
+      "work_id": "E23",
+      "work_title": "惜誓序",
+      "sentences": 7,
+      "tokens": 51,
+      "chars": 76
+    },
+    {
+      "work_id": "E24",
+      "work_title": "招隱士序",
+      "sentences": 5,
+      "tokens": 71,
+      "chars": 127
+    },
+    {
+      "work_id": "E25",
+      "work_title": "七諫序",
+      "sentences": 7,
+      "tokens": 57,
+      "chars": 98
+    },
+    {
+      "work_id": "E26",
+      "work_title": "哀時命序",
+      "sentences": 3,
+      "tokens": 35,
+      "chars": 64
+    },
+    {
+      "work_id": "E27",
+      "work_title": "九懷序",
+      "sentences": 5,
+      "tokens": 52,
+      "chars": 88
+    },
+    {
+      "work_id": "E28",
+      "work_title": "九歎序",
+      "sentences": 5,
+      "tokens": 54,
+      "chars": 80
+    },
+    {
+      "work_id": "E29",
+      "work_title": "新論·本造",
+      "sentences": 10,
+      "tokens": 107,
+      "chars": 189
+    },
+    {
+      "work_id": "E31",
+      "work_title": "新論·道賦",
+      "sentences": 11,
+      "tokens": 88,
+      "chars": 149
+    },
+    {
+      "work_id": "E39",
+      "work_title": "春秋公羊經傳解詁序",
+      "sentences": 10,
+      "tokens": 112,
+      "chars": 205
+    }
+  ],
+  "short_threshold_tokens": 200,
+  "feature_settings": [
+    100,
+    50
+  ],
+  "tokenization": "jieba.lcut on text_normalized, keep CJK/alnum tokens only; train_model.USER_WORDS added",
+  "user_words": [
+    "文章",
+    "著述",
+    "鴻儒",
+    "文人",
+    "經傳",
+    "詩賦",
+    "辭賦",
+    "離騷",
+    "屈原",
+    "雅頌",
+    "風雅",
+    "雕蟲",
+    "篆刻",
+    "諷諫",
+    "作者",
+    "篇章",
+    "文辭",
+    "筆墨",
+    "論說",
+    "傳書",
+    "經藝",
+    "鴻筆",
+    "文采",
+    "華藻",
+    "模範",
+    "儀表",
+    "賦頌",
+    "歌詩",
+    "樂府",
+    "石渠",
+    "金馬",
+    "史記",
+    "漢書",
+    "藝文志",
+    "七略"
+  ],
+  "unit": "one work or defined excerpt; not one sentence",
+  "caveat": "full-corpus exploration (1654 sentences), not the 1163-sentence main-sample test result; PCA positions are not prediction probabilities",
+  "counts_match_catalogue": true
+}

@@ -1,0 +1,22 @@
+{
+  "pair": [
+    "W06-015",
+    "E11-018"
+  ],
+  "exact_normalized_equal": false,
+  "n": 4,
+  "min_shared": 4,
+  "threshold": 0.6,
+  "min_short_cjk": 8,
+  "shared_ngrams": 10,
+  "containment": 1.0,
+  "jaccard": 0.25,
+  "lcs_len": 15,
+  "lcs_text": "曰詩人之賦麗以則辭人之賦麗以淫",
+  "detected_by_approx": true,
+  "reason": "",
+  "text_a": "曰：「詩人之賦麗以則，辭人之賦麗以淫。",
+  "text_b": "是以揚子悔之，曰：「詩人之賦麗以則，辭人之賦麗以淫；如孔氏之門人用賦也，則賈誼登堂，相如入室矣，如其不用何！」",
+  "url_a": "https://zh.wikisource.org/w/index.php?oldid=2269064",
+  "url_b": "https://zh.wikisource.org/w/index.php?oldid=7908197"
+}

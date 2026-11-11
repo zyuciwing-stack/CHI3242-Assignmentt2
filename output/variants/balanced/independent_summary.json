@@ -1,0 +1,8 @@
+{
+  "text": "論衡·超奇",
+  "n_sentences": 129,
+  "true_period": "東漢",
+  "accuracy": 0.5193798449612403,
+  "prop_pred_east": 0.5193798449612403,
+  "mean_prob_east": 0.5126519522289289
+}

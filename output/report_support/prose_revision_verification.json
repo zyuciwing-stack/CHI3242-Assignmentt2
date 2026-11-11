@@ -1,0 +1,19 @@
+{
+  "body_counts": {
+    "正文可見非空白字元": 2498,
+    "正文漢字": 2036
+  },
+  "appendix_records": 70,
+  "backup": "C:\\CHI3242文本發掘\\第二次作業\\output\\report_support\\report_before_prose_20261111_052522.md",
+  "numerical_literals_unchanged": true,
+  "table_data_unchanged": true,
+  "protected_sha256": {
+    "report.pdf": "b174586f87970274d73fb46dbe6261453783ec85457f5894f6323f9dfd42322f",
+    "report.docx": "a544d5067807be6fee2add3d889356fa032100ad62a4bbad9372c544ac5a6840",
+    "report.html": "85140fcd7fd1a9c3b2cab8d8e0d49832fde2e0a8f301c50321bc366c08eca384",
+    "corpus_catalogue.csv": "f5a4ed83915a3963c8c9e6e5bc648df1d2dcb5164fe4d86ca468d513d51d24cd",
+    "corpus_catalogue.md": "dc2d9da14038ad748bd666c03b7e990c2792eb58d520a82e87d51b64a27d6390"
+  },
+  "report_md_sha256": "d0fe697cfc3ce9207a3d9c667350d7299cc60300991cea518b9882a16616bfc0",
+  "pdf_status": "未更新；待作者審閱文字後重排。"
+}

@@ -1,0 +1,197 @@
+{
+  "works": 52,
+  "sentences": 1654,
+  "tokens": 18996,
+  "short_under_200": 25,
+  "100": {
+    "coverage_count": 5330,
+    "similarity_max_error": 3.885780586188048e-16,
+    "chaoqi_similarity_max_error": 8.326672684688674e-17,
+    "contribution_rows": 1000,
+    "both_negative_rows": 445,
+    "neighbor_absent_rows": 412,
+    "example_absent": [
+      {
+        "feature_set": "100",
+        "neighbor_work_id": "E02",
+        "neighbor_rank": "1",
+        "feature": "屈原",
+        "count_chaoyi": "1",
+        "count_neighbor": "0",
+        "rel_freq_chaoyi": "0.0006954102920723226",
+        "rel_freq_neighbor": "0.0",
+        "z_chaoyi": "-0.5265110390271907",
+        "z_neighbor": "-0.5607873824402554",
+        "category": "both_below_mean",
+        "both_present": "False",
+        "z_product": "0.2952607474019574",
+        "cosine_contribution": "0.008821957201511974",
+        "total_count": "48",
+        "doc_count": "21",
+        "author_count": "4",
+        "west_count": "7",
+        "east_count": "41"
+      },
+      {
+        "feature_set": "100",
+        "neighbor_work_id": "E02",
+        "neighbor_rank": "1",
+        "feature": "或",
+        "count_chaoyi": "6",
+        "count_neighbor": "0",
+        "rel_freq_chaoyi": "0.004172461752433936",
+        "rel_freq_neighbor": "0.0",
+        "z_chaoyi": "0.09781559302657036",
+        "z_neighbor": "-0.3131663759962285",
+        "category": "other",
+        "both_present": "False",
+        "z_product": "-0.030632554784053",
+        "cosine_contribution": "-0.000915255717719879",
+        "total_count": "39",
+        "doc_count": "17",
+        "author_count": "9",
+        "west_count": "15",
+        "east_count": "24"
+      }
+    ],
+    "屈原": {
+      "total": 48,
+      "authors": {
+        "王逸": 40,
+        "司馬遷": 6,
+        "揚雄": 1
+      }
+    },
+    "向": {
+      "total": 24,
+      "authors": {
+        "劉向": 23,
+        "王逸": 1,
+        "劉安": 0
+      }
+    },
+    "臣": {
+      "total": 33,
+      "authors": {
+        "劉向": 23,
+        "司馬遷": 4,
+        "王褒": 2
+      }
+    },
+    "凡": {
+      "total": 18,
+      "authors": {
+        "劉向": 10,
+        "王逸": 2,
+        "應劭": 2
+      }
+    }
+  },
+  "50": {
+    "coverage_count": 4252,
+    "similarity_max_error": 2.7755575615628914e-16,
+    "chaoqi_similarity_max_error": 1.1102230246251565e-16,
+    "contribution_rows": 500,
+    "both_negative_rows": 215,
+    "neighbor_absent_rows": 150,
+    "example_absent": [
+      {
+        "feature_set": "50",
+        "neighbor_work_id": "E02",
+        "neighbor_rank": "1",
+        "feature": "屈原",
+        "count_chaoyi": "1",
+        "count_neighbor": "0",
+        "rel_freq_chaoyi": "0.0006954102920723226",
+        "rel_freq_neighbor": "0.0",
+        "z_chaoyi": "-0.5265110390271907",
+        "z_neighbor": "-0.5607873824402554",
+        "category": "both_below_mean",
+        "both_present": "False",
+        "z_product": "0.2952607474019574",
+        "cosine_contribution": "0.018720912930064938",
+        "total_count": "48",
+        "doc_count": "21",
+        "author_count": "4",
+        "west_count": "7",
+        "east_count": "41"
+      },
+      {
+        "feature_set": "50",
+        "neighbor_work_id": "E02",
+        "neighbor_rank": "1",
+        "feature": "或",
+        "count_chaoyi": "6",
+        "count_neighbor": "0",
+        "rel_freq_chaoyi": "0.004172461752433936",
+        "rel_freq_neighbor": "0.0",
+        "z_chaoyi": "0.09781559302657036",
+        "z_neighbor": "-0.3131663759962285",
+        "category": "other",
+        "both_present": "False",
+        "z_product": "-0.030632554784053",
+        "cosine_contribution": "-0.001942247305081158",
+        "total_count": "39",
+        "doc_count": "17",
+        "author_count": "9",
+        "west_count": "15",
+        "east_count": "24"
+      }
+    ],
+    "屈原": {
+      "total": 48,
+      "authors": {
+        "王逸": 40,
+        "司馬遷": 6,
+        "揚雄": 1
+      }
+    },
+    "臣": {
+      "total": 33,
+      "authors": {
+        "劉向": 23,
+        "司馬遷": 4,
+        "王褒": 2
+      }
+    }
+  },
+  "chaoqi_overlap": {
+    "5": [
+      "E02",
+      "E04",
+      "E34"
+    ],
+    "10": [
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E34",
+      "W02",
+      "W14",
+      "W25"
+    ]
+  },
+  "stable_distribution": {
+    "1": 6,
+    "4": 9,
+    "2": 14,
+    "3": 20,
+    "5": 2,
+    "0": 1
+  },
+  "reuse": {
+    "total": 30,
+    "cross_period": 1,
+    "same_author": 29
+  },
+  "protected_hashes_match": {
+    "corpus_catalogue.csv": true,
+    "data\\v3\\dataset_v3.csv": true,
+    "data\\v3\\sentences_all.csv": true,
+    "data\\v3\\sources.csv": true,
+    "output\\v3\\metrics.json": true,
+    "output\\v3\\test_predictions.csv": true,
+    "output\\v3\\independent_predictions.csv": true
+  }
+}

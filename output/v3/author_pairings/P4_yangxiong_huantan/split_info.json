@@ -1,0 +1,45 @@
+{
+  "pair": "P4_yangxiong_huantan",
+  "west_author": "揚雄",
+  "east_author": "桓譚",
+  "test_authors": [
+    "揚雄",
+    "桓譚"
+  ],
+  "train_authors_full": [
+    "何休",
+    "劉向",
+    "劉安",
+    "劉歆",
+    "司馬談",
+    "司馬遷",
+    "應劭",
+    "王充",
+    "王褒",
+    "王逸",
+    "班固",
+    "趙岐",
+    "鄭玄"
+  ],
+  "train_authors_zip": [
+    "劉安",
+    "王充"
+  ],
+  "test_sentences": 180,
+  "test_period": {
+    "西漢": 118,
+    "東漢": 62
+  },
+  "train_full_sentences": 1474,
+  "train_full_period": {
+    "東漢": 890,
+    "西漢": 584
+  },
+  "train_zip_sentences": 678,
+  "train_zip_period": {
+    "東漢": 581,
+    "西漢": 97
+  },
+  "baseline": 0.6555555555555556,
+  "baseline_class": "西漢"
+}
